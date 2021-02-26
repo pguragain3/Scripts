@@ -1,0 +1,2 @@
+#!/bin/bash
+cd /home/pg/Scripts/fantech_x7_bast_linux && sudo python3 driver_backend.py
