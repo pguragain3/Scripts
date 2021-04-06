@@ -1,0 +1,49 @@
+#!/bin/bash
+for arg in "$@"; do
+  if [[ $arg = "mysql" ]]; then
+  		echo "========stopping mysql-server========"
+  	  	echo "$(docker stop mysql_mysql-server_1) stopped"
+  	  	echo "====================================="
+
+  fi
+
+  if [[ $arg = "phpmyadmin" ]]; then
+  	  	echo "========stopping phpmyadmin========"
+  	  	echo "$(docker stop mysql_phpmyadmin_1) stopped"
+  	  	echo "==================================="
+  fi
+
+  if [[ $arg = "mysql" ]]; then
+  		echo "========stopping mysql-server========"
+  	  	echo "$(docker stop mysql_mysql-server_1) stopped"
+  	  	echo "====================================="
+
+  fi
+
+  if [[ $arg = "postgres" ]]; then
+  	  	echo "========stopping postgresql========"
+  	  	echo "$(docker stop postgresql) stopped"
+  	  	echo "==================================="
+  fi
+
+    if [[ $arg = "pgadmin" ]]; then
+  		echo "========stopping pgadmin============"
+  	  	echo "$(docker stop pgadmin) stopped"
+  	  	echo "====================================="
+
+  fi
+
+  if [[ $arg = "oracle" ]]; then
+  	  	echo "========stopping oracle========"
+  	  	echo "$(docker stop oracle) stopped"
+  	  	echo "==================================="
+  fi
+
+    if [[ $arg = "mongodb" ]]; then
+  	  	echo "========stopping mongodb========"
+  	  	echo "$(docker stop mongodb) stopped"
+  	  	echo "==================================="
+  fi
+
+done
+

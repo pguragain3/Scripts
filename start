@@ -1,0 +1,49 @@
+#!/bin/bash
+for arg in "$@"; do
+  if [[ $arg = "mysql" ]]; then
+  		echo "========Starting mysql-server========"
+  	  	echo "$(docker start mysql_mysql-server_1) started"
+  	  	echo "====================================="
+
+  fi
+
+  if [[ $arg = "phpmyadmin" ]]; then
+  	  	echo "========Starting phpmyadmin========"
+  	  	echo "$(docker start mysql_phpmyadmin_1) started"
+  	  	echo "==================================="
+  fi
+
+  if [[ $arg = "mysql" ]]; then
+  		echo "========Starting mysql-server========"
+  	  	echo "$(docker start mysql_mysql-server_1) started"
+  	  	echo "====================================="
+
+  fi
+
+  if [[ $arg = "postgres" ]]; then
+  	  	echo "========Starting postgresql========"
+  	  	echo "$(docker start postgresql) started"
+  	  	echo "==================================="
+  fi
+
+    if [[ $arg = "pgadmin" ]]; then
+  		echo "========Starting pgadmin============"
+  	  	echo "$(docker start pgadmin) started"
+  	  	echo "====================================="
+
+  fi
+
+  if [[ $arg = "oracle" ]]; then
+  	  	echo "========Starting oracle========"
+  	  	echo "$(docker start oracle) started"
+  	  	echo "==================================="
+  fi
+
+    if [[ $arg = "mongodb" ]]; then
+  	  	echo "========Starting mongodb========"
+  	  	echo "$(docker start mongodb) started"
+  	  	echo "==================================="
+  fi
+
+done
+
