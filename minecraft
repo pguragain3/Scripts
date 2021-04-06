@@ -1,2 +1,2 @@
 #!/bin/bash
-java -jar tlauncher.jar
+cd ~/Scripts && java -jar tlauncher.jar

@@ -1,2 +1,2 @@
 #!/bin/bash
-java --module-path /usr/share/openjfx/lib --add-modules ALL-MODULE-PATH -jar mcaselector.jar
+cd ~/Scripts && java --module-path /usr/share/openjfx/lib --add-modules ALL-MODULE-PATH -jar mcaselector.jar
