@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+import requests
+import json
+
+x=requests.get('http://www.nepalstock.com/company/graphdata/2929/D')
+jsondata=x.json()
+for i in range(-10,0):
+	print('Rs.'+str((jsondata[i][1])*10))
+
